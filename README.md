@@ -1,5 +1,5 @@
-# MicroPython Rotary Encoder Driver
-A MicroPython driver to read a rotary encoder.  Works with Pyboard, Raspberry Pi Pico, ESP8266, and ESP32 development boards.  This is a robust implementation providing effective debouncing of encoder contacts.  It uses two GPIO pins configured to trigger interrupts, following Ben Buxton's implementation:
+# MicroPython Rotary Encoder Driver: Fork for RP2040 Nimbus Robot by wallComputer
+A MicroPython driver to read a rotary encoder. Works with ~~Pyboard, Raspberry Pi Pico, ESP8266, and ESP32 development boards~~ RP2040.  This is a robust implementation providing effective debouncing of encoder contacts.  It uses two GPIO pins configured to trigger interrupts, following Ben Buxton's implementation:
 * http://www.buxtronix.net/2011/10/rotary-encoders-done-properly.html
 * https://github.com/buxtronix/arduino/tree/master/libraries/Rotary
 
@@ -16,8 +16,8 @@ A gray code based transition state table is used to process the DT and CLK chang
 Two files are needed to use this module
 * platform-independent file `rotary.py` - a core file for all development boards
 * platform-specific file:
-  * `rotary_irq_esp.py`  Platform-specific code for ESP8266 and ESP32 development boards
-  * `rotary_irq_pyb.py`  Platform-specific code for Pyboard development boards
+  * ~~`rotary_irq_esp.py`  Platform-specific code for ESP8266 and ESP32 development boards~~ Removed.
+  * ~~`rotary_irq_pyb.py`  Platform-specific code for Pyboard development boards~~ Removed
   * `rotary_irq_rp2.py`  Platform-specific code for Raspberry Pi Pico development boards
 
 ### Copying files to development boards
